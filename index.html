@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Reality - JOYNAL ABEDIN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+<body class="bg-[#111111] text-white font-inter scroll-smooth">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed w-full top-0 left-0 z-50 bg-transparent px-8 py-4 flex justify-between items-center transition-colors duration-500">
+    <div class="text-2xl font-bold">JOYNAL ABEDIN</div>
+    <ul class="flex gap-6">
+      <li><a href="#hero" class="hover:text-[#4ADE80]">Home</a></li>
+      <li><a href="#about" class="hover:text-[#4ADE80]">About</a></li>
+      <li><a href="#skills" class="hover:text-[#4ADE80]">Skills</a></li>
+      <li><a href="#projects" class="hover:text-[#4ADE80]">Projects</a></li>
+      <li><a href="#contact" class="hover:text-[#4ADE80]">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+    <!-- Particles Background -->
+    <div id="tsparticles" class="absolute inset-0 -z-10"></div>
+
+    <!-- 3D Text Canvas -->
+    <canvas id="hero3dText" class="absolute inset-0 -z-5"></canvas>
+
+    <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeIn glow-text">Welcome to Reality</h1>
+    <p class="text-xl md:text-2xl text-gray-400 mb-8 animate-fadeIn delay-300">Digital Security | Networking | Cryptocurrency Specialist</p>
+    <div class="flex gap-6 animate-fadeIn delay-600">
+      <a href="#projects" class="px-6 py-3 border border-[#4ADE80] hover:bg-[#4ADE80] hover:text-black transition-all rounded glow-btn">View Projects</a>
+      <a href="#contact" class="px-6 py-3 border border-[#4ADE80] hover:bg-[#4ADE80] hover:text-black transition-all rounded glow-btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-32 px-8 md:px-32 flex flex-col md:flex-row items-center gap-12 bg-[#111111]">
+    <img src="assets/images/profile.jpg" alt="JOYNAL ABEDIN" class="w-64 h-64 rounded-full shadow-lg">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-300 text-lg">I am JOYNAL ABEDIN, a highly skilled professional specializing in digital security, advanced networking, and blockchain technologies. My expertise spans safeguarding online assets, managing secure digital transactions, and executing complex cross-network operations. I continuously explore emerging technologies to deliver efficient, secure, and innovative solutions.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-32 px-8 md:px-32 bg-[#1a1a1a]">
+    <h2 class="text-4xl font-bold mb-12 text-center">Core Skills</h2>
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="flex flex-col items-center p-6 bg-[#222222] rounded-lg shadow hover:shadow-lg transition-all">
+        <canvas id="skill1" width="120" height="120"></canvas>
+        <h3 class="text-2xl font-semibold mt-4">Digital Security</h3>
+        <p class="text-gray-400 text-center mt-2">Social media protection, vulnerability testing, ethical trials.</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-[#222222] rounded-lg shadow hover:shadow-lg transition-all">
+        <canvas id="skill2" width="120" height="120"></canvas>
+        <h3 class="text-2xl font-semibold mt-4">Networking</h3>
+        <p class="text-gray-400 text-center mt-2">IPv4/IPv6, IP management, configuration & troubleshooting.</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-[#222222] rounded-lg shadow hover:shadow-lg transition-all">
+        <canvas id="skill3" width="120" height="120"></canvas>
+        <h3 class="text-2xl font-semibold mt-4">Cryptocurrency</h3>
+        <p class="text-gray-400 text-center mt-2">Cross-network transfers (BEP-20, TRC-20, ERC-20).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-32 px-8 md:px-32 bg-[#111111]">
+    <h2 class="text-4xl font-bold mb-12 text-center">Selected Projects</h2>
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="project-card relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <img src="assets/images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
+        <div class="overlay absolute inset-0 bg-[#111111]/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-4 transition-all">
+          <h3 class="text-xl font-semibold mb-2">Social Media Security Toolkit</h3>
+          <p class="text-gray-300 mb-4">Advanced account protection solutions.</p>
+          <a href="#" class="px-4 py-2 bg-[#4ADE80] text-black rounded hover:bg-green-600 transition">View</a>
+        </div>
+      </div>
+      <div class="project-card relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <img src="assets/images/project2.jpg" alt="Project 2" class="w-full h-64 object-cover">
+        <div class="overlay absolute inset-0 bg-[#111111]/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-4 transition-all">
+          <h3 class="text-xl font-semibold mb-2">Crypto Cross-Network Transfers</h3>
+          <p class="text-gray-300 mb-4">Managed BEP-20 → TRC-20 safely.</p>
+          <a href="#" class="px-4 py-2 bg-[#4ADE80] text-black rounded hover:bg-green-600 transition">View</a>
+        </div>
+      </div>
+      <div class="project-card relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
+        <img src="assets/images/project3.jpg" alt="Project 3" class="w-full h-64 object-cover">
+        <div class="overlay absolute inset-0 bg-[#111111]/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-4 transition-all">
+          <h3 class="text-xl font-semibold mb-2">Network Configuration & Troubleshooting</h3>
+          <p class="text-gray-300 mb-4">Optimized IP & network solutions.</p>
+          <a href="#" class="px-4 py-2 bg-[#4ADE80] text-black rounded hover:bg-green-600 transition">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-32 px-8 md:px-32 bg-[#1a1a1a]">
+    <h2 class="text-4xl font-bold mb-12 text-center">Get In Touch</h2>
+    <div class="max-w-xl mx-auto">
+      <form name="contact" netlify class="flex flex-col gap-6">
+        <input type="text" name="name" placeholder="Name" class="p-4 rounded bg-[#222222] border border-gray-700 focus:border-[#4ADE80] outline-none">
+        <input type="email" name="email" placeholder="Email" class="p-4 rounded bg-[#222222] border border-gray-700 focus:border-[#4ADE80] outline-none">
+        <textarea name="message" placeholder="Message" rows="5" class="p-4 rounded bg-[#222222] border border-gray-700 focus:border-[#4ADE80] outline-none"></textarea>
+        <button type="submit" class="px-6 py-3 bg-[#4ADE80] text-black font-semibold rounded hover:bg-green-600 transition glow-btn">Send Message</button>
+      </form>
+      <div class="flex justify-center gap-6 mt-8">
+        <a href="#" class="hover:text-[#4ADE80]">GitHub</a>
+        <a href="#" class="hover:text-[#4ADE80]">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-[#111111] text-center text-gray-500">
+    © 2026 JOYNAL ABEDIN. All rights reserved.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Particles.js
+    tsParticles.load("tsparticles", {
+      background:{color:{value:"#111111"}}, fpsLimit:60,
+      interactivity:{events:{onHover:{enable:true,mode:"repulse"},resize:true},modes:{repulse:{distance:100,duration:0.4}}},
+      particles:{color:{value:"#4ADE80"},links:{color:"#4ADE80",distance:150,enable:true,opacity:0.2,width:1},move:{enable:true,speed:1},number:{value:60},opacity:{value:0.3},shape:{type:"circle"},size:{random:true,value:3}},
+      detectRetina:true
+    });
+
+    // Hero 3D Text
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,0.1,1000);
+    const renderer = new THREE.WebGLRenderer({canvas:document.getElementById("hero3dText"),alpha:true});
+    renderer.setSize(window.innerWidth,window.innerHeight);
+    camera.position.z=5;
+    const geometry = new THREE.BoxGeometry(3,1,0.3); // Placeholder for 3D text
+    const material = new THREE.MeshBasicMaterial({color:0x4ADE80});
+    const cube = new THREE.Mesh(geometry,material);
+    scene.add(cube);
+    function animate(){requestAnimationFrame(animate);cube.rotation.y+=0.01;renderer.render(scene,camera);}
+    animate();
+  </script>
+</body>
+</html>
